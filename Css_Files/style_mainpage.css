@@ -1,0 +1,10 @@
+#lightbox-invoker{
+  cursor: pointer;
+  height: 45px;
+  width:90px;
+  border-bottom-right-radius:90px;
+  border-bottom-left-radius: 90px;
+  position: absolute;
+  left: 45%;
+  top:0%; 
+}

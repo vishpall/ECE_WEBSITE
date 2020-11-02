@@ -35,10 +35,10 @@ Main Components
 -------------------------------- */
 .cd-nav-trigger {
   /* hamburger icon */
-  position: fixed;
-  z-index: 2;
-  top: 0px;
-  right: 3%;
+  position: absolute;
+  z-index: 3;
+  top: 0%;
+  right: 1%;
   height: 44px;
   width: 44px;
   /* image replacement */
@@ -139,7 +139,7 @@ Main Components
 }
 @media only screen and (min-width: 1024px) {
   .cd-nav-trigger {
-    top: 38px;
+    top: 10px;
   }
 }
 
@@ -150,7 +150,7 @@ xnavigation
 -------------------------------- */
 .cd-nav-container {
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   top: 0;
   right: 0;
   width: 80%;
@@ -518,7 +518,7 @@ main.scale-down {
 
 .cd-section {
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   top: 0;
   left: 0;
   height: 100%;
@@ -535,7 +535,7 @@ main.scale-down {
 }
 .cd-section.cd-selected {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);

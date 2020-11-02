@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900& display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
+#backup{
+  position: absolute;
+  left:50%;
+}
+
+
 html, body { 
   background: #1C182F;
   font-family: 'Roboto Condensed', sans-serif;
@@ -13,13 +19,14 @@ html, body {
   margin:0; 
 }
 
-canvas {
-   width: 100vw;
-   height: 100vh;
-   position: absolute;
-   top:0;
-   left:0;
+#bridge{
+  position: relative;
+  max-height: 100vh;
+  max-width: 100%;
+  display: flex;
 }
+
+
  
 .text-holder{
   position: absolute;
@@ -31,7 +38,7 @@ canvas {
 
 .card-menu-section-1 {background-color: #e4dcca;}
 
-.card-menu-section-2 { background-color: white; background-size: cover;}
+.card-menu-section-2 { background-color: #116466; background-size: cover;overflow-y: scroll; overflow-x: hidden;}
 
 .card-menu-section-3 {background-color: white;}
 .card-menu-section-4 { background-image: url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg); background-size: cover;}
@@ -186,18 +193,25 @@ canvas {
   background: currentColor;
   box-shadow: 0 8px, 0 16px;
 }
-#login-image{
+/*#login-image{
   position: absolute;
-  /*right: -100px;*/
+  right: -100px;
   top:4px;
   left:50%;
   width: 20rem;
   height:5%;
-}
+}*/
 #lightbox-invoker{
-  background: none;
   cursor: pointer;
+  height: 45px;
+  width:90px;
+  border-bottom-right-radius:90px;
+  border-bottom-left-radius: 90px;
+  position: absolute;
+  left: 45%;
+  top:0%; 
 }
+
 
 
 
