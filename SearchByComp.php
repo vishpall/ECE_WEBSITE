@@ -1,43 +1,44 @@
 <?php
+    //echo '<script type="text/javascript">alert("'.$msg.'");</script>';
+function alert($msg) { ?> <script type="text/javascript">alert("<?php echo preg_replace("/\r?\n/", "\\n", addslashes($msg)); ?>");
+</script><?php   die(); }
+
 if(isset($_POST['search2'])){
-$selected_val = $_POST['comp'];  // Storing Selected Value In Variable
-echo "You have selected :" .$selected_val;
+$comp = $_POST['comp'];
 include 'db_connection.php';
 $conn = OpenCon();
-echo "<br>";
-echo "Connected to database Successfully"."<br>";
-$count=0;
-  // Displaying Selected Value
-  $sql = "SELECT * FROM data WHERE comp_name='".$_POST['comp']."'";
-  $result = $conn->query($sql);
-  if ($result->num_rows > 0) {
-      // output data of each row
-      echo "Comp_name : " . $_POST['comp']."<br>";
-
-      while($row = $result->fetch_assoc()) {
-          echo "<b>Roll no :</b> " . $row["roll_no"]."<b>    No : </b>".$row["no"]."<b>    Phone_no : </b>".$row["phno"]."   <b> Return data : </b>".$row["return_date"];
-          echo "<br>";
-          $count=$count+(int)$row["no"];
-        }
-      $sql = "SELECT total FROM list WHERE comp_name='".$_POST['comp']."'";
-      $result = $conn->query($sql);
-      if ($result->num_rows > 0) {
-          // output data of each row
-          while($row = $result->fetch_assoc()) {
-            $total=$row["total"];
-             echo "<br>"."Total : ".$total."<br>";
-              echo "Borrowed: " . $count."<br>";
-              $remaining=(int)$total-$count;
-              echo "Available : ".$remaining."<br>";}
+$sql = "SELECT * FROM data WHERE comp_name='".$_POST['comp']."'";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+//  $_SESSION['uname'] = "kali";
+      if(isset($_SESSION["uname"]))
+      {
+        $data="Students having ".$comp." are : \n";
+        #alert("".$data);
+    while($row = $result->fetch_assoc()) { $data=$data.$row["sname"]."          ".$row["roll_no"]."\n"; }
+      alert($data);
+      alert("Successfully");
       }
-      else{echo"data not found in records";}
-  }
-  else
-   {
-      echo "Data not found in the records";
-  }
+      else {
+        $sql = "SELECT comp_count FROM comp WHERE comp_name='".$_POST['comp']."'";
+        $result1 = $conn->query($sql);
+        $row = $result1->fetch_assoc();
+        if($row["comp_count"]>0)
+        alert("Status : available");
+        else {
+          alert("Status Unavailable");
+        }
+      }
+header('Location: index.php');
+}
+
+else
+ {alert("Data not found in the records");
+header('Location: index.php');
+ }
+
+
 
 }
 $conn -> close();
-#CloseCon($conn);
 ?>

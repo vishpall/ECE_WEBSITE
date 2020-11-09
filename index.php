@@ -3,7 +3,7 @@
 <head>
   <title>ACUMEN ECE</title>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-  
+
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700|IM+Fell+Double+Pica:400italic' rel='stylesheet' type='text/css'>
      <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
      <link rel="stylesheet" href="css/style.css">
@@ -16,7 +16,7 @@
   <link rel="stylesheet" type="text/css"href="Css_Files/style-lightbox-adnonad.css">
   <!-- Resource style -->
   <script src="js/modernizr.js"></script>
-   
+
     <script src="js/modernizr-2.6.2.min.js"></script>
 
 <script type="text/javascript">
@@ -30,7 +30,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 })();
 </script>
 
-  
+
 </head>
 <body>
   <!-- /container -->
@@ -45,7 +45,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
     <h2 class="card-menu-section-heading">About Us</h2>
 
 <header class="cd-header container flex justify-between items-center">
-    
+
 
     <h1 class="ml5">
   <span class="text-wrapper">
@@ -71,11 +71,11 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 <div class="cd-modal">
   <div class="modal-content">
       <section id="timeline">
-  
+
   <div class="tl-item">
-    
+
     <div class="tl-bg" style="background-image: url(https://placeimg.com/801/801/nature)"></div>
-    
+
     <div class="tl-year">
       <p class="f2 heading--sanSerif">Our Vision</p>
     </div>
@@ -88,9 +88,9 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
   </div>
 
   <div class="tl-item">
-    
+
     <div class="tl-bg" style="background-image: url(https://placeimg.com/802/802/nature)"></div>
-    
+
     <div class="tl-year">
       <p class="f2 heading--sanSerif">Our mission</p>
     </div>
@@ -103,9 +103,9 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
   </div>
 
   <div class="tl-item">
-    
+
     <div class="tl-bg" style="background-image: url(https://placeimg.com/803/803/nature)"></div>
-    
+
     <div class="tl-year">
       <p class="f2 heading--sanSerif">Our Vibe</p>
     </div>
@@ -118,9 +118,9 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
   </div>
 
   <div class="tl-item">
-    
+
     <div class="tl-bg" style="background-image: url(https://placeimg.com/800/800/nature)"></div>
-    
+
     <div class="tl-year">
       <p class="f2 heading--sanSerif">Our service</p>
     </div>
@@ -137,11 +137,11 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
   <a href="#0" class="modal-close">Close</a>
 </div> <!-- .cd-modal -->
 
-<div class="cd-transition-layer"> 
+<div class="cd-transition-layer">
   <div class="bg-layer"></div>
 </div> <!-- .cd-transition-layer -->
 
-  
+
     <div class='waves'>
     <div class='wave wave1'></div>
     <div class='wave wave2'></div>
@@ -150,12 +150,12 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
     </div>
 
 
- 
-  
+
+
 <script src="Css_Files/assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
 <script src="Css_Files/assets/js/main.js"></script>
 
-    
+
   </div>
   <div class="card-menu-section card-menu-section-2 active" data-section="2" id="card-menu-section card-menu-section-2 active">
     <div class="card-menu-menu-btn"></div>
@@ -166,7 +166,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
         this is a new div
       </div>
     <button onclick="openLightbox()" id="lightbox-invoker"><img id="login-image" src="img/usb.svg" width="200" height="100"></button>
-    
+
 
         <a href="#cd-nav" class="cd-nav-trigger">
     Menu<span><!-- used to create the menu icon --></span>
@@ -240,12 +240,12 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
   </nav>
 
   <div class="cd-overlay"><!-- shadow layer visible when navigation is visible --></div>
- 
+
   <div class='text holder'>
     <h2>this is a test text!!</h2>
-  </div> 
-  
-  
+  </div>
+
+
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/main.js"></script>
 </div>
@@ -256,7 +256,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
     <h2 class="card-menu-section-heading">Contact</h2>
 
   </div>
-  
+
   <div class="card-menu-section card-menu-section-4 inactive" data-section="4">
     <div class="card-menu-menu-btn"></div>
     <h2 class="card-menu-section-heading">SUPPPORT</h2>
@@ -295,30 +295,34 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
               </a>
             </div>
           </form>
-          <form action="PHP Files/SearchByRoll.php" class="sign-up-form" method="post">
+          <form action="SearchByRoll.php" class="sign-up-form" method="post">
             <h2 class="title">Non Admin</h2>
             <button id="close-lightbox-button-nonadmin" onclick="closeLightbox()"><img src="img/close.svg" width="30" height="30"></button>
             <label for="roll"><b>Enter roll no: </b></label>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="text" placeholder="eg: 160218735060" name="rollno" required>
+              <input type="text" placeholder="eg: 160218735060" name="rollno">
             </div>
-            <input type="submit" name="search1" class="btn" value="Search" />
+            <input type="submit" name="search1" class="btn" value="Search by Roll No" />
+</form>
+<br />
+            <form action="SearchByComp.php" class="sign-up-form" method="post">
+              <button id="close-lightbox-button-nonadmin" onclick="closeLightbox()"><img src="img/close.svg" width="30" height="30"></button>
+              <i class="fas fa-lock"></i>
 
-            <form action="PHP Files/action.php" class="sign-up-form" method="post">
             <select name="comp" id="chooseComp">
                 <option value="default">     Choose component</option>
-                <option value="nodemcu">Nodemcu(ESP8266)</option>
-                <option value="raspberry pi">Raspberry pi 3</option>
+                <option value="nodemcu">nodemcu</option>
+                <option value="raspberry pi">raspberry pi</option>
                 <option value="relay">relay</option>
                 <option value="servo">Servo</option>
             </select>
-            <input type="submit" name="submit" class="btn" value="submit" />
+            <input type="submit" name="search2" class="btn" value="search by comp" />
             </form>
-          </form>
 
-          
-          
+
+
+
         </div>
       </div>
 
