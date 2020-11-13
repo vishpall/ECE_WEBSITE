@@ -1,4 +1,8 @@
 <?php
+function alert($msg) {
+    echo "<script type='text/javascript'>alert('$msg');</script>";
+}
+session_start();
 function test_input($data) {
   $data = trim($data);
   $data = stripslashes($data);
@@ -20,16 +24,23 @@ echo "Connected to database Successfully"."<br>";
         $sql= "select * from auth where uname='".$uname."' and passwd='".$passwd."'";
         $result = $conn->query($sql);
         if ($result->num_rows > 0) {
-          $_SESSION['uname'] = $uname;
-          header('Location: admin-home.php');
-        }
 
-        else
-        {
-            echo "Invalid username and password";
-        }
+          while($row = $result->fetch_assoc()) {
+              if ($row["uname"]==$uname) {
+                  $_SESSION['uname'] = $uname;
+                if(isset($_SESSION["uname"]))
+                {
 
-    }
-}
-CloseCon($conn);
-?>
+                    header('Location: admin-home.php');
+                // code...
+              }
+              }
+              else {
+
+
+                header('Location: index.php');
+              }
+              }
+            }
+          }
+        }

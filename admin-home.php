@@ -1,19 +1,44 @@
+
+<?php
+#refreshing script to eliminate directory bruteforce
+session_start();
+$page = $_SERVER['PHP_SELF'];
+$sec = "45";#refreshes after 60
+ ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <!-- auto refreshing script -->
+    <meta http-equiv="refresh" content="<?php echo $sec?>;URL='<?php echo $page?>'">
     <title>HOMEPAGE</title>
     <meta charset="utf-8">
     <script>document.getElementsByTagName("html")[0].className += " js";</script>
-    
-    
+
+
     <link rel="stylesheet" type="text/css" href="Css_Files/style-admin-home.css">
     <link rel="stylesheet" type="text/css" href="Css_Files/assets/css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <h1>welcome to stores <?php
+   if(isset($_SESSION['uname'])){
+     echo $_SESSION["uname"];
+   }
+   else{
+     include 'logout.php';
+     destroy();
+     }
+
+   ?></h1>
   </head>
 <body>
   <header class="cd-header container flex justify-between items-center">
-    
+
+    <a href="#0" class="cd-logo">
+      <svg width="124" height="23" viewBox="0 0 124 23"><title>Go to homepage</title><rect width="70" height="23" fill="#c96aa4"/><rect x="70" width="27" height="23" fill="#9a57bd"/><rect x="97" width="27" height="23" fill="#fff"/></svg>
+    </a>
+
+
     <a href="#cd-3d-nav" class="cd-header__nav-trigger" aria-label="Toggle menu">
       <span aria-hidden="true"></span>
     </a>
@@ -21,17 +46,14 @@
    top:15%; left:15%">
    <h3 id="main_heading">Admin Page</h3>
 
-        
+
 
   </header>
-  
+
   <main class="cd-main">
-    <!--<img src="img/Admin-Page-icons/dices.svg" style="width: 100px; height: 100px;">
-    <img src="img/Admin-Page-icons/network.svg" style="width: 100px; height: 100px; position: absolute; -ms-transform: rotate(20deg); transform: rotate(20deg); left:10%;">
-    <img src="img/Admin-Page-icons/online-advertising.svg" style="width: 100px; height: 100px;position: absolute; -ms-transform: rotate(20deg); transform: rotate(20deg); left:20%;">
-    <img src="img/Admin-Page-icons/technology.svg" style="width: 100px; height: 100px; position: absolute;-ms-transform: rotate(20deg); transform: rotate(-20deg); left:30%;">
-    <img src="img/Admin-Page-icons/toss.svg" style="width: 100px; height: 100px; position: absolute; -ms-transform: rotate(20deg); transform: rotate(-20deg); left:40%;">-->
+
     <button style="position: absolute; left:50%;" >logout</button>
+
     <div class="searchBox">
 
             <input class="searchInput"type="text" name="" placeholder="Search">
@@ -42,21 +64,21 @@
             </button>
   </div>
         <div class="catalogue-holder">
-    <div class="card"> 
+    <div class="card">
     <div class='imgBox'>
       Search
       <img src="img/report.svg" style="width: 200px;height: 200px; padding-top: 10%; padding-left: 3%;">
 
-    </div> 
+    </div>
     <div class="admin-search" >
       <h2>Search</h2>
-  
+
     <form action="SearchByRoll.php" method="post">
       <label for="roll"><b>Enter roll no :  </b></label>
         <input type="text" placeholder="eg : 160218735031" name="rollno" required>
       <input type="submit" name="search1" value="Search" />
     </form>
-    
+
 <br>
     <form action="SearchByComp.php" method="post">
       <label for="comps">Component :   </label>
@@ -72,7 +94,9 @@
 <br>
 </div>
 </div>
-
+<form class="" action="logout.php" method="post">
+<input type="submit" name="logout" value="Logout" />
+</form>
 <div class='card2'>
   <div class='imgBox'>
     Update Records
@@ -100,7 +124,7 @@
       <label for="count"><b>Enter count :  </b></label>
         <input type="number" placeholder="default 1" name="count"><br>
        <label for="phno"><b>Enter OTP:  </b></label>
-      <input type="number" placeholder="6 digit No." name="OTP" required><br> 
+      <input type="number" placeholder="6 digit No." name="OTP" required><br>
   <input type="submit" name="update" value="Update" />
 
 </form>
@@ -130,9 +154,9 @@
 
 
 </div>
-    
+
   </main>
-  
+
   <nav class="cd-3d-nav js-cd-3d-nav" id="cd-3d-nav">
     <ul class="cd-3d-nav__list">
       <li class="cd-3d-nav__item cd-3d-nav__item--selected">
@@ -164,19 +188,19 @@
       </li>
 
       <li class="cd-3d-nav__item">
-        <a href="#0">
+        <a href="logout.php">
           <svg aria-hidden="true" class="icon icon--md"><g stroke="currentColor" stroke-width="2" fill="none"><polyline points="13 6 2 6 2 30 26 30 26 19"></polyline> <polygon points="16 20 10 22 12 16 26 2 30 6 16 20"></polygon><line x1="22" y1="6" x2="26" y2="10"></line></svg>
-          <span>New</span>
+          <span>Logout</span>
         </a>
       </li>
     </ul>
 
-    <span class="cd-3d-nav__marker cd-3d-nav__marker--col-1" aria-hidden="true"></span> 
+    <span class="cd-3d-nav__marker cd-3d-nav__marker--col-1" aria-hidden="true"></span>
   </nav>
 <script src="Css_Files/assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
 <script src="Css_Files/assets/js/main.js"></script>
 </body>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
-  
+
 </html>
