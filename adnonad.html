@@ -7,10 +7,14 @@
       src="https://kit.fontawesome.com/64d58efce2.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="Css_Files/style-lightbox-adnonad.css" />
+    <link rel="stylesheet" href="Css_Files/style-adnonad.css" />
     <title>Admin and Non Admin</title>
   </head>
   <body>
+
+    <a href="new_mainpage.html"><img src="img/two-houses.svg" style="width: 10%; height: 10%; position: absolute; left: 0%; top:3%;"></a>
+
+    <img src="img/blogging.svg" style="width: 30%; height: 30%; position: absolute; left: 75%; top:5%;">
     <div class="adnonad">
       <div class="forms-adnonad">
         <div class="signin-signup">
@@ -41,30 +45,41 @@
               </a>
             </div>
           </form>
-          <form action="SearchByRoll.php" class="sign-up-form" method="post">
+          <form action="PHP Files/SearchByRoll.php" class="sign-up-form">
             <h2 class="title">Non Admin</h2>
-            
-            <label for="roll"><b>Enter roll no: </b></label>
-            <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="text" placeholder="eg: 160218735060" name="rollno" required>
-            </div>
-            <input type="submit" name="search1" class="btn" value="Search" />
-
-            <form action="action.php" class="sign-up-form" method="post">
-            <select name="comp" id="chooseComp">
-                <option value="default">     Choose component</option>
-                <option value="nodemcu">Nodemcu(ESP8266)</option>
-                <option value="raspberry pi">Raspberry pi 3</option>
-                <option value="relay">relay</option>
-                <option value="servo">Servo</option>
-            </select>
-            <input type="submit" name="submit" class="btn" value="submit" />
-            </form>
+              <label for="roll"><b>Enter roll no: </b></label>
+              <div class="input-field">
+                <i class="fas fa-lock"></i>
+                <input type="text" placeholder="eg: 160218735060" name="rollno" required>
+              </div>
+              <input type="submit" name="search1" class="btn" value="Search" />
           </form>
+          <form action="PHP Files/action.php" class="sign-up-form1" method="post">
+              <select name="comp" id="chooseComp">
+                  <option value="default">     Choose component</option>
+                  <option value="nodemcu">Nodemcu(ESP8266)</option>
+                  <option value="raspberry pi">Raspberry pi 3</option>
+                  <option value="relay">relay</option>
+                  <option value="servo">Servo</option>
+              </select>
+              <input type="submit" name="submit" class="btn" value="submit" />
 
-          
-          
+              <p class="social-text">Our Social Platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+              </form>
         </div>
       </div>
 
@@ -96,6 +111,6 @@
       </div>
     </div>
 
-    <script src="javascript_files/javascript-lightbox-adnonad.js"></script>
+    <script src="javascript_files/javascript-adnonad.js"></script>
   </body>
 </html>

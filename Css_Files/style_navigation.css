@@ -1,15 +1,7 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background: transparent;
-  font-family: "Lato", sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
-
 nav {
-  position: relative;
+  position: absolute;
+  left: 40%;
+  padding-top: 30px;
   padding-bottom: 12px;
 }
 nav .line {
@@ -49,4 +41,27 @@ nav ul li a {
   font-weight: 600;
   letter-spacing: 0.2em;
   font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav li:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1200px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }

@@ -1,14 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Pacifico&display=swap');
 *{
 	margin:0;
 	padding:0;
 }
 
+#main_heading{
+    position: absolute;
+    top:2%;
+    left: 35%;
+   font-family: 'Berkshire Swash', cursive;
+   font-family: 'Pacifico', cursive;
+   font-size: 5em;
+}
+
 
 .searchBox {
     position: absolute;
-    margin:0;
-    left: 50%;
+    top: -80px;
+    left:92%;
     transform:  translate(-50%,50%);
     background: #2f3640;
     height: 40px;
@@ -66,9 +77,7 @@
 	grid-template-columns:repeat(auto-fit, minmax(400px , 1fr));
 	justify-content: center;
 	align-content: center;
-	padding: 2em;
 	height: auto;
-	padding-top: 15%;
 	grid-auto-rows: minmax(100px, auto);
 	grid-auto-columns: minmax(200px , auto);
 	box-sizing: border-box;
@@ -99,6 +108,7 @@
   0 41.8px 33.4px rgba(0, 0, 0, 0.086),
   0 100px 80px rgba(0, 0, 0, 0.12);
   	border-radius: 10px;
+    margin-top:10em;
 }
 .card:hover{
 	transform: perspective(2000px) rotate(-10deg);
@@ -108,13 +118,8 @@
 .card .imgBox{
 	position:relative;
 	background: rgba(181,204,238,1);
-background: -moz-linear-gradient(45deg, rgba(181,204,238,1) 0%, rgba(110,167,242,1) 50%, rgba(30,123,230,1) 51%, rgba(181,204,238,1) 100%);
-background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(181,204,238,1)), color-stop(50%, rgba(110,167,242,1)), color-stop(51%, rgba(30,123,230,1)), color-stop(100%, rgba(181,204,238,1)));
-background: -webkit-linear-gradient(45deg, rgba(181,204,238,1) 0%, rgba(110,167,242,1) 50%, rgba(30,123,230,1) 51%, rgba(181,204,238,1) 100%);
-background: -o-linear-gradient(45deg, rgba(181,204,238,1) 0%, rgba(110,167,242,1) 50%, rgba(30,123,230,1) 51%, rgba(181,204,238,1) 100%);
-background: -ms-linear-gradient(45deg, rgba(181,204,238,1) 0%, rgba(110,167,242,1) 50%, rgba(30,123,230,1) 51%, rgba(181,204,238,1) 100%);
-background: linear-gradient(45deg, rgba(181,204,238,1) 0%, rgba(110,167,242,1) 50%, rgba(30,123,230,1) 51%, rgba(181,204,238,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5ccee', endColorstr='#b5ccee', GradientType=1 );
+    background-image: linear-gradient(to right top, #2f8e77, #52a08b, #71b39f, #8fc5b5, #acd8ca, #acd5c7, #acd3c4, #acd0c1, #90b8a4, #76a088, #5d886c, #467150);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5ccee', endColorstr='#b5ccee', GradientType=1 );
 	width:100%;
 	height: 100%;
 	border:1px solid #000;
@@ -123,9 +128,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5ccee', end
 	z-index:1;
 	transition: 1s;
 	border-radius: 10px;
-	-webkit-box-shadow: 20px 18px 62px -7px rgba(104,104,242,0.9);
--moz-box-shadow: 20px 18px 62px -7px rgba(104,104,242,0.9);
-box-shadow: 20px 18px 62px -7px rgba(104,104,242,0.9); 
+    font-family: 'Sansita Swashed', cursive;
+    font-weight: 900;
+    font-size: 3em;
+    padding-top: 20%;
+    padding-left: 10%;
 }
 .card:hover .imgBox{
 	transform: rotateY(-135deg);
@@ -197,10 +204,11 @@ input{
 	transform-style: preserve-3d;
 	transform: perspective(2000px);
 	transition: 1s;
-	-webkit-box-shadow: 20px 18px 62px -7px rgba(250,70,208,1);
--moz-box-shadow: 20px 18px 62px -7px rgba(250,70,208,1);
-box-shadow: 20px 18px 62px -7px rgba(250,70,208,1);
+	-webkit-box-shadow: 9px 5px 22px 0px rgba(50, 50, 50, 0.73);
+-moz-box-shadow:    9px 5px 22px 0px rgba(50, 50, 50, 0.73);
+box-shadow:         9px 5px 22px 0px rgba(50, 50, 50, 0.73);
   	border-radius: 10px;
+    margin-top:10em;
 }
 .card2:hover{
 	transform: perspective(2000px) rotate(-10deg);
@@ -208,15 +216,12 @@ box-shadow: 20px 18px 62px -7px rgba(250,70,208,1);
 }
 
 .card2 .imgBox{
+    font-family: 'Sansita Swashed', cursive;
+    font-weight: 900;
+    font-size: 3em;
 	position:relative;
 	background: rgba(255,224,235,1);
-background: -moz-linear-gradient(45deg, rgba(255,224,235,1) 0%, rgba(255,46,116,1) 49%, rgba(255,143,180,1) 50%, rgba(255,255,255,1) 100%);
-background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(255,224,235,1)), color-stop(49%, rgba(255,46,116,1)), color-stop(50%, rgba(255,143,180,1)), color-stop(100%, rgba(255,255,255,1)));
-background: -webkit-linear-gradient(45deg, rgba(255,224,235,1) 0%, rgba(255,46,116,1) 49%, rgba(255,143,180,1) 50%, rgba(255,255,255,1) 100%);
-background: -o-linear-gradient(45deg, rgba(255,224,235,1) 0%, rgba(255,46,116,1) 49%, rgba(255,143,180,1) 50%, rgba(255,255,255,1) 100%);
-background: -ms-linear-gradient(45deg, rgba(255,224,235,1) 0%, rgba(255,46,116,1) 49%, rgba(255,143,180,1) 50%, rgba(255,255,255,1) 100%);
-background: linear-gradient(45deg, rgba(255,224,235,1) 0%, rgba(255,46,116,1) 49%, rgba(255,143,180,1) 50%, rgba(255,255,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe0eb', endColorstr='#ffffff', GradientType=1 );
+    background-image: linear-gradient(to right top, #ee9816, #ff955c, #ff9c92, #ffacbf, #ffc1de, #ffc1dd, #ffc0dd, #ffc0dc, #ffabbb, #ff9b8c, #ff9555, #e49900);
 	width:100%;
 	height: 100%;
 	border:1px solid #000;
@@ -225,6 +230,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe0eb', end
 	z-index:1;
 	transition: 1s; 
 	border-radius: 10px;
+    padding-top: 20%;
 }
 .card2:hover .imgBox{
 	transform: rotateY(-135deg);
@@ -237,14 +243,70 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe0eb', end
 	padding:20px;
 
 }
+.admin-update-records{
+    font-family: 'Sansita Swashed', cursive;
+    font-weight: 700;
+}
+.admin-update-records input{
+    height: 2em;
+    color: #8f2e50;
+    background-color: #c5cfde;
+    margin-bottom: 1em;
+    border-radius: 2em;
+
+}
+.admin-update-records select {
+    height: 2em;
+    color: #8f2e50;
+    background-color: #c5cfde;
+    margin-bottom: 1em;
+    border-radius: 2em;
+}
 
 
 .admin-component-renewal h2{
-	margin-bottom: 3em;
+	margin-bottom: 2em;
+    font-family: 'Sansita Swashed', cursive;
+    font-weight: 700;
 }
 .admin-search h2{
-	margin-bottom: 3em;
+	margin-bottom: 2em;
+    font-family: 'Sansita Swashed', cursive;
+    font-weight: 700;
 }
+
+.admin-component-renewal label {
+     font-family: 'Sansita Swashed', cursive;
+     font-weight: 700;
+     font-size: 1.5em;
+}
+.admin-search label{
+    font-family: 'Sansita Swashed', cursive;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.admin-component-renewal input{
+    height: 2em;
+    color: #8f2e50;
+    background-color: #c5cfde;
+    margin-bottom: 3em;
+    border-radius: 2em;
+}
+.admin-search input{
+    height: 2em;
+    color: #8f2e50;
+    background-color: #c5cfde;
+    margin-bottom: 2em;
+    border-radius: 2em;
+}
+.admin-search select {
+    height: 2em;
+    color: #8f2e50;
+    background-color: #c5cfde;
+    margin-bottom: 3em;
+    border-radius: 2em;
+}
+
 
 nav{
     height: 3.5rem;

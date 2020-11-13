@@ -21,6 +21,8 @@ html {
 body {
   background-color: hsl(0, 0%, 100%);
   background-color: var(--color-bg, white);
+  overflow-x: hidden;
+  background-image: url("../../../img/Admin-Page-icons/pattern.png");
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,main,form legend {
@@ -3498,7 +3500,7 @@ mark {
 }
 
 :root {
-  --cd-color-1: hsl(226, 23%, 37%);
+  --cd-color-1: hsl(0deg 6% 94%);
   --cd-color-1-h: 226;
   --cd-color-1-s: 23%;
   --cd-color-1-l: 37%;
@@ -3571,7 +3573,7 @@ body {
 }
 
 .cd-header__nav-trigger {
-  position: relative;
+  position: absolute; 
   height: 45px;
   width: 45px;
 }
@@ -3580,7 +3582,7 @@ body {
   position: absolute;
   width: 28px;
   height: 3px;
-  background-color: pink;
+  background-color: #501B1D;
   /*background-color: var(--color-white);*/
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -3618,7 +3620,7 @@ body {
 }
 
 .cd-header--is-translated .cd-header__nav-trigger span::before,.cd-header--is-translated .cd-header__nav-trigger span::after {
-  background-color: pink;
+  background-color: #64485C;
   /*background-color: hsla(var(--color-white-h), var(--color-white-s), var(--color-white-l), 1);*/
 }
 
@@ -3673,6 +3675,7 @@ body {
   -ms-flex-positive: 1;
   flex-grow: 1;
   transition: background-color 0.2s;
+  background-color: #6F2232;
   color: hsl(0, 0%, 100%);
   color: var(--color-white);
   text-decoration: none;

@@ -3,7 +3,7 @@
 Primary style
 
 -------------------------------- */
-*, *::after, *::before {
+/* *, *::after, *::before {
   box-sizing: border-box;
 }
 
@@ -29,9 +29,8 @@ Main Components
 
 -------------------------------- */
 .cd-background-wrapper {
-  background-color: #001426;
+  background-color: #929ea8;
   position: relative;
-  overflow: hidden;
   -webkit-perspective: 4000px;
   perspective: 4000px;
 }
@@ -51,7 +50,7 @@ Main Components
 }
 .cd-floating-background img {
   display: block;
-  width: 100%;
+  width: 50%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   /* fixes a Firefox bug - images not correctly rendered*/

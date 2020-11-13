@@ -29,7 +29,7 @@ Patterns - reusable parts of our design
 
 -------------------------------- */
 .cd-btn {
-  /*display: inline-block;
+  display: inline-block;  
   padding: 1.6em 2.4em;
   font-size: 1.4rem;
   letter-spacing: .15em;
@@ -42,7 +42,7 @@ Patterns - reusable parts of our design
   -moz-osx-font-smoothing: grayscale;
   -webkit-transition: box-shadow 0.3s;
   -moz-transition: box-shadow 0.3s;
-  transition: box-shadow 0.3s;*/
+  transition: box-shadow 0.3s;
 }
 .no-touch .cd-btn:hover {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
