@@ -14,8 +14,16 @@ header {
 header h1 {
   text-transform: uppercase;
   letter-spacing: 1pt;
+  font-size: 4em;
+  color: #fff;
+}
+@media screen and (min-width: 600px){
+  header h1 {
+  text-transform: uppercase;
+  letter-spacing: 1pt;
   font-size: 7em;
   color: #fff;
+}
 }
 
 header .triangle {
@@ -52,7 +60,6 @@ header.open #header_button {
   width: 50px;
   border-radius: 50%;
 }
-
 
 
 

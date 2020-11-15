@@ -14,12 +14,7 @@ body {
   grid-template-rows: 1fr auto;
   grid-template-areas: "main" "footer";
   overflow-x: hidden;
- /* background-image: linear-gradient(to right top, #37425f, #595c79, #7c7794, #9f94b0, #c3b2cc, #c3b3ca, #c3b4c9, #c3b5c7, #a199a7, #817d86, #646367, #494949);*/
-  background-image: url("img/water_background.svg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-image: linear-gradient(to right top, #37425f, #595c79, #7c7794, #9f94b0, #c3b2cc, #c3b3ca, #c3b4c9, #c3b5c7, #a199a7, #817d86, #646367, #494949);
   min-height: 100vh;
   font-family: 'Open Sans', sans-serif;
 }

@@ -68,10 +68,11 @@ p span:after {
 #scroll{
   position: absolute;
   bottom: 0%;
-  left: 10%;
+  left: 50%;
   height: 5%;
   width: 5%;
   color: black;
+  font-size: 1em;
 }
 #college-students{
  width:25%; height: 25%;
