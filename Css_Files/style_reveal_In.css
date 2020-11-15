@@ -14,10 +14,8 @@ header {
 header h1 {
   text-transform: uppercase;
   letter-spacing: 1pt;
-  font-size: 10em;
+  font-size: 7em;
   color: #fff;
-  font-family: 'Berkshire Swash', cursive;
-  font-weight: 400;
 }
 
 header .triangle {
@@ -28,7 +26,7 @@ header .triangle {
   width: 100%;
   height: 100%;
   /*background: linear-gradient(to top, #09203f 0%, #537895 100%);*/
-  background-image: url("https://i.pinimg.com/originals/19/1d/b4/191db4d5fae6380ebaa50c2511e951b7.jpg");
+  background-image: url("https://www.wallpapertip.com/wmimgs/237-2372683_technology-wallpapers-1920x1080.png");
   background-size: cover;
   transition: all 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
   display: flex;

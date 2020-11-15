@@ -12,13 +12,16 @@
   </head>
   <body>
 
-    <a href="new_mainpage.html"><img src="img/two-houses.svg" style="width: 10%; height: 10%; position: absolute; left: 0%; top:3%;"></a>
+    
+    <a href="index.html"><img src="img/two-houses.svg" style="width: 10%; height: 10%; position: absolute; left: 0%; top:3%;"></a>
 
     <img src="img/blogging.svg" style="width: 30%; height: 30%; position: absolute; left: 75%; top:5%;">
     <div class="adnonad">
       <div class="forms-adnonad">
         <div class="signin-signup">
           <form action="validate_admin.php" class="sign-in-form" method="post">
+            <p style="position: absolute;left:23%;top:2%; color: black;
+    font-size: 1em; font-weight: 400;">To check how the page looks after login, click the black button.</p>
             <h2 class="title">Admin login</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
@@ -29,7 +32,7 @@
               <input type="password" placeholder="Password" name="psw" required>
             </div>
             <input type="submit" name="submit1" value="Login" class="btn solid" />
-            
+    
           </form>
           <form action="PHP Files/SearchByRoll.php" class="sign-up-form">
             <h2 class="title">Non Admin</h2>
@@ -80,6 +83,7 @@
             <button class="btn transparent" id="sign-up-btn">
               Non-Admin
             </button>
+            <a href="admin-home.html"><button id="black_button">CLICK HERE TO SEE ADMIN PAGE</button></a>
           </div>
           <img src="img/technology.svg" class="image" alt="" />
         </div>

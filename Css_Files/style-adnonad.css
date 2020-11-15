@@ -278,7 +278,18 @@ form.sign-in-form {
 .adnonad.sign-up-mode .right-panel {
   pointer-events: all;
 }
-
+#black_button{
+  position: absolute;
+  color: white;
+  font-size: 1em;
+  font-weight: 400; 
+  background-color: black;
+  border-radius: 40px;
+  padding:1em;
+  cursor: pointer;
+  right:5%;
+  top: 87%;
+}
 @media (max-width: 870px) {
   .adnonad {
     min-height: 800px;

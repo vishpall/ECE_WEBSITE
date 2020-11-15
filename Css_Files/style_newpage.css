@@ -11,7 +11,6 @@ html, body {
 
 body {
   background-color: #E4F0E7;
-  font-family: "Lusitana", sans-serif;
 }
 
 p {
@@ -59,11 +58,51 @@ p span:after {
 .ml3{
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
-  font-size: 4em;
+  font-size: 3em;
   position: absolute;
-  left: 36%;
+  left: 25%;
   top: -5%;
   color: black;
+}
+
+#scroll{
+  position: absolute;
+  bottom: 0%;
+  left: 10%;
+  height: 5%;
+  width: 5%;
+  color: black;
+}
+#college-students{
+ width:25%; height: 25%;
+ position: absolute;
+ right: 12%;
+ bottom:20%;
+}
+@media screen and (min-width: 600px){
+  .ml3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 4em;
+    position: absolute;
+    left: 36%;
+    top: -5%;
+    color: black;
+  }
+  #scroll{
+  position: absolute;
+  bottom: 0%;
+  left: 55%;
+  height: 5%;
+  width: 5%;
+  color: black;
+}
+#college-students{
+ width:25%; height: 25%;
+ position: absolute;
+ right: 15%;
+ bottom:-5%;
+}
 }
 
 h1 {
@@ -503,7 +542,7 @@ svg {
 }
 .container1 h2 {
   font-family: 'Oleo Script Swash', cursive;
-  font-size: 2rem;
+  font-size: 1.3rem;
   padding: 0.5rem;
   letter-spacing: 0.1rem;
   text-align: center;
